@@ -1,5 +1,6 @@
 body{
     margin: 0%;
+    background-color: antiquewhite;
 }
     
     
@@ -11,7 +12,7 @@ body{
     color:blue
 }
 
-.green{
+#green{
     color:green
 }
 
