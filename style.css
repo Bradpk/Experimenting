@@ -1,5 +1,10 @@
-h1 {
-    color:black
+body{
+    margin: 0%;
+}
+    
+    
+    h1 {
+    color:blueviolet
 }
 
 .blue {
@@ -12,4 +17,20 @@ h1 {
 
 p {
     color:black
+}
+nav ol {
+    display:flex;
+    background-color:black;
+    margin-top: 0%;
+    line-height: 2;
+    font-size: 30px;
+    width:100%
+}
+li {
+    width:100%;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color:aliceblue
 }
