@@ -40,3 +40,49 @@ const button4 = document.getElementsByClassName("four")[0];
 button4.addEventListener('click', () => {
     button4.textContent = '4'
 })
+
+function five () {
+let randomNumber = Math.floor(Math.random() * 11)
+document.getElementById("rando").textContent = randomNumber;
+}
+
+let interval = ''
+
+switch (randomNumber) {
+    case 0:
+        interval = "A"
+        break;
+    case 1:
+        interval = "A#"
+        break;
+    case 2:
+        interval = "B"
+        break;
+    case 3:
+        interval = "C"
+        break;
+    case 4:
+        interval = "C#"
+        break;
+    case 5:
+        interval = "D"
+        break;
+    case 6:
+        interval = "D#"
+        break;
+    case 7:
+        interval = "E"
+        break;
+    case 8:
+        interval = "F"
+        break;
+    case 9:
+        interval = "F#"
+        break;
+    case 10:
+        interval = "G"
+        break;
+    case 11:
+        interval = "G#"
+        break;
+}
