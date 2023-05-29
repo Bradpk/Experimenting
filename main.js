@@ -1,4 +1,11 @@
-// const declares the variable name. 
+/* 
+- const declares the variable. 
+- button 1 is the name of the variable. 
+- document.getElementById("one") sets the variable to be the element with the id that matches what is inside the parenthesis 
+- button1.addEventListener() gives the variable an event handler, in this case "click"
+- => {} declares the function and whatever is inside the curly braces will be what the function does
+- button1.textContent = "Ho!" will change the original text that had the id="one" which in this case was the button tag that said "Hey".
+*/
 const button1 = document.getElementById("one");
 button1.addEventListener('click', () => {
     button1.textContent = 'Ho!';
