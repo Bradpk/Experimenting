@@ -1,8 +1,13 @@
-function doIt() {
-    document.getElementById('change').style.background = "darkred"
-}
-const btn = document.querySelector("button");
-btn.addEventListener("click", async () => {
+const button1 = document.getElementById("one");
+button1.addEventListener('click', () => {
+    button1.textContent = 'Ho!';
+    button1.addEventListener('click', () => {
+        button1.textContent = 'Lets Go!';
+    })
+})
+
+const button2 = document.getElementById("two");
+button2.addEventListener("click", async () => {
     await Tone.start();
     const synth = new Tone.Synth().toDestination();
     const now = Tone.now();
@@ -22,3 +27,12 @@ btn.addEventListener("click", async () => {
     synth.triggerAttackRelease("B3", "16n", now + 4.5)
     synth.triggerAttackRelease("C4", "16n", now + 4.8)
 });
+
+function three() {
+    document.getElementById('change').style.background = "darkred"
+}
+
+const button4 = document.getElementsByClassName("four")[0];
+button4.addEventListener('click', () => {
+    button4.textContent = '4'
+})
