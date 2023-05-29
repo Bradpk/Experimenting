@@ -1,3 +1,4 @@
+// const declares the variable name. 
 const button1 = document.getElementById("one");
 button1.addEventListener('click', () => {
     button1.textContent = 'Ho!';
@@ -6,6 +7,7 @@ button1.addEventListener('click', () => {
     })
 })
 
+//
 const button2 = document.getElementById("two");
 button2.addEventListener("click", async () => {
     await Tone.start();
@@ -28,10 +30,12 @@ button2.addEventListener("click", async () => {
     synth.triggerAttackRelease("C4", "16n", now + 4.8)
 });
 
+//
 function three() {
     document.getElementById('change').style.background = "darkred"
 }
 
+//
 const button4 = document.getElementsByClassName("four")[0];
 button4.addEventListener('click', () => {
     button4.textContent = '4'
