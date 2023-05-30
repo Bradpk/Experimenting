@@ -45,7 +45,7 @@ function three() {
 //
 const button4 = document.getElementsByClassName("four")[0];
 button4.addEventListener('click', () => {
-    button4.textContent = '4'
+    button4.textContent = 'Stay Classy'
 })
 
 function five() {
@@ -91,3 +91,51 @@ function five() {
     }
     document.getElementById("random").textContent = interval;
 }
+
+
+const button6 = document.getElementById("six");
+button6.addEventListener("click", async () => {
+    await Tone.start();
+    const synth = new Tone.Synth().toDestination();
+    const now = Tone.now();
+    let randomNote = Math.floor(Math.random() * 11)
+    let interval = ''
+    switch (randomNote) {
+        case 0:
+            interval = synth.triggerAttackRelease("A4", "16n", now)
+            break;
+        case 1:
+            interval = synth.triggerAttackRelease("A#4", "16n", now)
+            break;
+        case 2:
+            interval = synth.triggerAttackRelease("B4", "16n", now)
+            break;
+        case 3:
+            interval = synth.triggerAttackRelease("C4", "16n", now)
+            break;
+        case 4:
+            interval = synth.triggerAttackRelease("C#4", "16n", now)
+            break;
+        case 5:
+            interval = synth.triggerAttackRelease("D4", "16n", now)
+            break;
+        case 6:
+            interval = synth.triggerAttackRelease("D#4", "16n", now)
+            break;
+        case 7:
+            interval = synth.triggerAttackRelease("E4", "16n", now)
+            break;
+        case 8:
+            interval = synth.triggerAttackRelease("F4", "16n", now)
+            break;
+        case 9:
+            interval = synth.triggerAttackRelease("F#4", "16n", now)
+            break;
+        case 10:
+            interval = synth.triggerAttackRelease("G4", "16n", now)
+            break;
+        case 11:
+            interval = synth.triggerAttackRelease("G#4", "16n", now)
+            break;
+    }
+});
