@@ -18,4 +18,8 @@ INIT:
 
 END: End the program
 
+------------------------------
 
+Next Goals: 
+Combine Random Note Generator (text) with Random Note Generator (sound)
+Create a bass line loop

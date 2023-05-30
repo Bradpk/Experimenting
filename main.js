@@ -39,7 +39,7 @@ button2.addEventListener("click", async () => {
 
 //
 function three() {
-    document.getElementById('change').style.background = "darkred"
+        document.getElementById('change').style.background = "darkred"
 }
 
 //
