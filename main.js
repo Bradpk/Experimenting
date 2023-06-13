@@ -1,3 +1,13 @@
+const axios = require('axios');
+
+axios.get('https://github.com/Bradpk/sand-box.git')
+  .then(function (response) {
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
 /* 
 - const declares the variable. 
 - button 1 is the name of the variable. 
